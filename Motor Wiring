@@ -1,0 +1,43 @@
+Motors
+
+The motors are arranged as follows (looking from the top) Back Right: Motor A Back Left: Motor B Front Right: Motor C Front Left: Motor D Some L298 driver boards jumper out the "Enable" pin for each motor channel. Refer to the documentation for your board and check if there is a jumper which needs to be removed. The "A" and "B" (or "1" and "2") inputs on the motor driver control the direction.
+
+The "A" and "B" (or "1" and "2") inputs on the motor driver control the direction.
+
+Connections for the motor driver are as follows:
+
+Motor A (1)
+
+A => 22
+
+B => 24
+
+Enable => 2
+
+Motor B (2)
+
+A => 26
+
+B => 28
+
+Enable => 3
+
+Motor C (3)
+
+A => 30
+
+B => 31
+
+Enable => 4
+
+Motor D (4)
+
+A => 32
+
+B => 33
+
+Enable => 5
+
+The motor driver board outputs are normally labelled "+" and "-". Connect the positive and negative leads from the motors to the outputs.
+
+If you compile the code with "BURN_IN" defined, the software will cycle through each motor in turn. 
